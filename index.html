@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinish Kumar Kashyap — 3D Generalist</title>
+<meta name="description" content="Portfolio of Vinish Kumar Kashyap, a 3D generalist working across character modeling, environments, texturing, lighting and rendering in Blender.">
+<link rel="icon" href="assets/vgc-logo.jpg" type="image/jpeg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
+
+<header>
+    <nav>
+        <div class="logo">Vinish<span> · 3D Generalist</span></div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <span class="hero-tag"><span class="dot"></span>Available for freelance 3D work</span>
+        <h1>3D Generalist</h1>
+        <p class="hero-subtitle">Character modeling · Environments · Texturing · Lighting · Rendering — built in Blender.</p>
+        <p class="hero-description">B.Tech IT student at Rajkiya Engineering College, Banda, who also builds the websites that show the work off. I like taking an idea from blockout to a finished, lit render.</p>
+        <div class="hero-buttons">
+            <a href="#work" class="btn btn-primary">View Work</a>
+            <a href="assets/VinishGCResume.pdf" class="btn btn-outline" download>Download CV</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="profile-container">
+            <img src="assets/vinish.jpg" alt="Vinish Kumar Kashyap" class="profile-photo">
+            <div class="profile-glow"></div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+    <div class="section-head">
+        <span class="section-kicker">About</span>
+        <h2>Who I am</h2>
+    </div>
+    <div class="about-content">
+        <div class="about-text">
+            <div class="about-photo-container">
+                <img src="assets/vinish.jpg" alt="Vinish Kumar Kashyap" class="about-photo">
+            </div>
+            <p>I'm Vinish Kumar Kashyap, a 3D generalist and B.Tech IT student at Rajkiya Engineering College, Banda. I work across the full 3D pipeline in Blender — modeling characters and interiors, unwrapping and texturing, lighting scenes, and rendering them out in Cycles.</p>
+            <p>Alongside 3D, I build the web pages and tools that end up hosting that work, so I think about a piece from the moment it's a blockout in Blender to the moment someone sees it load on a screen.</p>
+            <p>I'm currently interning as a Java developer and a web developer, and using what I learn there to keep improving how my 3D work gets presented and shared.</p>
+            <p><strong>Let's <a href="#contact">connect</a> and build something together.</strong></p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-item">
+                <div class="skill-name"><span>Blender 3D (modeling, texturing, lighting)</span><span>70%</span></div>
+                <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Rendering (Cycles)</span><span>65%</span></div>
+                <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Frontend Development</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Java</span><span>70%</span></div>
+                <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Work -->
+<section id="work" class="work">
+    <div class="section-head">
+        <span class="section-kicker">Portfolio</span>
+        <h2>Selected Work</h2>
+        <p class="section-sub">A mix of renders, character studies and process breakdowns. Click any card for a closer look — video pieces play right in the card.</p>
+    </div>
+
+    <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="character">Characters</button>
+        <button class="filter-btn" data-filter="environment">Environments</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="process">Process</button>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+        <article class="work-card" data-category="environment" tabindex="0"
+                  data-title="Gaming Room — Interior Concept"
+                  data-desc="A stylized gaming-room interior built in Blender: modeled furniture and setup, a two-tone pink/cyan lighting scheme, and hex-panel wall detailing to give the space some personality."
+                  data-type="image" data-src="assets/proj_gamingroom.jpg">
+            <div class="work-media">
+                <img src="assets/proj_gamingroom.jpg" alt="Stylized 3D gaming room interior render" loading="lazy">
+                <span class="media-badge">🖼</span>
+            </div>
+            <div class="work-info">
+                <span class="work-category">Environment · Interior</span>
+                <h3 class="work-title">Gaming Room — Interior Concept</h3>
+            </div>
+        </article>
+
+        <article class="work-card" data-category="video environment" tabindex="0"
+                  data-title="Gaming Room — Walkthrough"
+                  data-desc="A camera walkthrough of the same gaming-room scene, showing the two character rigs placed in the space and how the lighting reads in motion."
+                  data-type="video" data-src="assets/gamingroom_walkthrough.mp4">
+            <div class="work-media">
+                <video src="assets/gamingroom_walkthrough.mp4" poster="assets/gamingroom_poster.jpg" muted loop playsinline preload="metadata"></video>
+                <span class="media-badge">▶</span>
+            </div>
+            <div class="work-info">
+                <span class="work-category">Animation · Walkthrough</span>
+                <h3 class="work-title">Gaming Room — Walkthrough</h3>
+            </div>
+        </article>
+
+        <article class="work-card" data-category="character" tabindex="0"
+                  data-title="Magazine Cover — Character Render"
+                  data-desc="A stylized character render composited onto a magazine-cover layout, used to test how a 3D character head and expression hold up in a finished, real-world graphic context."
+                  data-type="image" data-src="assets/proj_magazine.jpg">
+            <div class="work-media">
+                <img src="assets/proj_magazine.jpg" alt="3D character rendered on a magazine cover layout" loading="lazy">
+                <span class="media-badge">🖼</span>
+            </div>
+            <div class="work-info">
+                <span class="work-category">Character · Composite</span>
+                <h3 class="work-title">Magazine Cover — Character Render</h3>
+            </div>
+        </article>
+
+        <article class="work-card" data-category="character" tabindex="0"
+                  data-title="Virtual Human — Character Study"
+                  data-desc="A full-body stylized character study — proportions, outfit, and skin/cloth shading — built as an exercise in taking a character from rig to a clean turntable-ready render."
+                  data-type="image" data-src="assets/proj_virtualhuman.jpg">
+            <div class="work-media">
+                <img src="assets/proj_virtualhuman.jpg" alt="Full body stylized 3D character render" loading="lazy">
+                <span class="media-badge">🖼</span>
+            </div>
+            <div class="work-info">
+                <span class="work-category">Character · Full Body</span>
+                <h3 class="work-title">Virtual Human — Character Study</h3>
+            </div>
+        </article>
+
+        <article class="work-card" data-category="process character" tabindex="0"
+                  data-title="Character Head — Look-dev Process"
+                  data-desc="A behind-the-scenes look at a character head in progress inside Blender — shading node setup and viewport look-dev before the piece is taken to final lighting and render."
+                  data-type="image" data-src="assets/proj_process.jpg">
+            <div class="work-media">
+                <img src="assets/proj_process.jpg" alt="Blender viewport showing a character head shading setup" loading="lazy">
+                <span class="media-badge">🖼</span>
+            </div>
+            <div class="work-info">
+                <span class="work-category">Process · Look-dev</span>
+                <h3 class="work-title">Character Head — Look-dev Process</h3>
+            </div>
+        </article>
+
+        <article class="work-card" data-category="video character" tabindex="0"
+                  data-title="Hulk — First Animation Cycle"
+                  data-desc="A first movement-cycle test on a stylized Hulk character model, rendered next to an animated logo bumper — an early pass on posing and timing before a full animation pass."
+                  data-type="video" data-src="assets/proj_hulk_cycle.mp4">
+            <div class="work-media">
+                <video src="assets/proj_hulk_cycle.mp4" poster="assets/proj_hulk_cycle_poster.jpg" muted loop playsinline preload="metadata"></video>
+                <span class="media-badge">▶</span>
+            </div>
+            <div class="work-info">
+                <span class="work-category">Animation · Character Cycle</span>
+                <h3 class="work-title">Hulk — First Animation Cycle</h3>
+            </div>
+        </article>
+
+        <article class="work-card" data-category="video character" tabindex="0"
+                  data-title="Cinematic Close-up — 4K Render Test"
+                  data-desc="A cinematic close-up shot with shallow depth of field, rendered at 4K (2160×3840) to test lighting, skin shading and camera framing on a character close-up."
+                  data-type="video" data-src="assets/proj_cinematic_closeup.mp4">
+            <div class="work-media">
+                <video src="assets/proj_cinematic_closeup.mp4" poster="assets/proj_cinematic_closeup_poster.jpg" muted loop playsinline preload="metadata"></video>
+                <span class="media-badge">▶</span>
+            </div>
+            <div class="work-info">
+                <span class="work-category">Animation · Cinematic / 4K</span>
+                <h3 class="work-title">Cinematic Close-up — 4K Render Test</h3>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+    <div class="section-head">
+        <span class="section-kicker">Background</span>
+        <h2>Education</h2>
+    </div>
+    <div class="panel">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="institution-logo"><img src="assets/bcb.webp" alt="Rajkiya Engineering College Banda logo"></div>
+                <div class="timeline-date">2024 – 2028</div>
+                <h3 class="timeline-title">Bachelor of Technology — Information Technology</h3>
+                <div class="education-institution">Rajkiya Engineering College, Banda</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="institution-logo"><img src="assets/mb.avif" alt="Manohar Bhushan Inter College logo"></div>
+                <div class="timeline-date">2022 – 2023</div>
+                <h3 class="timeline-title">Intermediate</h3>
+                <div class="education-institution">Manohar Bhushan Inter College</div>
+                <span class="education-grade">Grade: 77%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+    <div class="section-head">
+        <span class="section-kicker">Background</span>
+        <h2>Experience</h2>
+    </div>
+    <div class="panel">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Sep 2025 – Present</div>
+                <h3 class="timeline-title">Web Developer</h3>
+                <div class="timeline-company">TechNext · Internship</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jul 2025 – Sep 2025</div>
+                <h3 class="timeline-title">Java Developer</h3>
+                <div class="timeline-company">Indikraft · Internship</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications">
+    <div class="section-head">
+        <span class="section-kicker">Background</span>
+        <h2>Certifications</h2>
+    </div>
+    <div class="panel">
+        <div class="cert-note">
+            <span class="cert-icon">📄</span>
+            <p>Certifications are on their way — currently building out credentials alongside coursework and internships. In the meantime, the full resume linked below covers everything up to date.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="section-head">
+        <span class="section-kicker">Get in touch</span>
+        <h2>Let's work together</h2>
+    </div>
+    <div class="contact-form">
+        <form id="contactForm" class="form-grid">
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-input" placeholder="Your email" required>
+            </div>
+            <div class="form-group full">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" class="form-input" placeholder="Subject">
+            </div>
+            <div class="form-group full">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-textarea" placeholder="Your message" required></textarea>
+            </div>
+            <div class="form-group full">
+                <button type="submit" class="form-submit">Send Message</button>
+                <p class="form-note">Opens your email app with this pre-filled, addressed to vinishkumarkashyap748@gmail.com.</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="logo">Vinish<span> · 3D Generalist</span></div>
+        <div class="social-links">
+            <a href="mailto:vinishkumarkashyap748@gmail.com">📧 Email</a>
+            <a href="https://github.com/VinishGC" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+            <a href="https://www.linkedin.com/in/vinish-kumar-kashyap-350877329/" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+            <a href="https://www.instagram.com/vinishgc/" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
+        </div>
+        <div class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="copyright">© 2026 Vinish Kumar Kashyap. All rights reserved.</div>
+    </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <div class="lightbox-inner">
+        <div class="lightbox-media" id="lightboxMedia"></div>
+        <div class="lightbox-text">
+            <span class="work-category" id="lightboxCategory"></span>
+            <h3 id="lightboxTitle"></h3>
+            <p id="lightboxDesc"></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
