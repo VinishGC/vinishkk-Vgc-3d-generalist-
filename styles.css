@@ -4,12 +4,12 @@
    ========================================================= */
 
 
-.full-view-hover {
+.work-card {
     position: relative;
     cursor: pointer;
 }
 
-.full-view-hover::after {
+.work-card::after {
     content: "Click to full view";
     position: absolute;
     top: 50%;
